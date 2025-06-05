@@ -1,0 +1,22 @@
+Architechture:
+
+- Every browser has a JS engine (Chrome-> V8, Edge-> Chakra etc) and sometimes JS code behave differently because of these different engines
+- Node -> (C++(V8))
+- Node is a runtime environment to execute javascript code
+- It includes V8 engine with some additional capabilities like access to environment variables in the browser
+- Highly-scalable and date-intensive because of non-blocking or asynchronous architecture by default
+- Not recommended for CPU intensive applications
+
+Module System:
+
+- Avoid defining functions/variables in the global scope. Instead keep it modular
+- Every file is a module and variables/functions defined inside a module are within the scope of the module and are not available outside the module unless and until exported
+- Use tools like "jshint" to execute javascript and get a clear understanding of the errors if any at compile time. Ex: "jshint app.js"
+- Javascript provides plenty of modules that can be imported as objects to use depending on our use cases. Ex: path, os, file system, http
+- Remember to always pass/define a callback function while using the asynchronous methods of an object
+- ExpressJS is built on top of the http module
+
+Events:
+
+- A signal that indicates something has happened
+- EventEmitter a class of event provides a number of methods like emit, addlistener/on, etc which can be used to listen for an event and produce an appropriate output
