@@ -20,3 +20,8 @@ Events:
 
 - A signal that indicates something has happened
 - EventEmitter a class of event provides a number of methods like emit, addlistener/on, etc which can be used to listen for an event and produce an appropriate output
+
+HTTPS:
+
+- (request, response)
+- Methods used GET, POST, UPDATE, DELETE
